@@ -18,11 +18,39 @@
             <h2>
                 Navegação Principal
             </h2>
-            <span> Start </span>
-            -
-            <span> About me </span>
-            -
-            <span> Contact </span>
+            <ol>
+                <li>
+                    <span> 
+                        <a href="class1.html" target="_self"> Start </a>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <a href="about.html" target="_self"> About me </a>
+                    </span>
+                </li>
+                <li>
+                    <span> 
+                        <a href="contact.html"> Contact </a> 
+                        <ul>
+                            <li>
+                                <a href="https://facebook.com">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com">Linkedin</a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com">Linkedin</a>
+                                <ul>
+                                    <li>Fixo</li>
+                                    <li>Celular</li>
+                                    <li>Comercial</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </span>
+                </li>
+            </ol>
         </nav>
     </header>
 
@@ -32,13 +60,18 @@
             <h4>
                 Documentos
             </h4>
-            ...
+            <ul>
+                <li>Identidade xxx</li>
+                <li>Cpf xxx.xxx.xxx.xx</li>
+                <li>CNH XX</li>
+            </ul>
         </article>
         <article>
             <h5>
                 Dados para contato
             </h5>
-            ...
+            <a href="mailto:sergio@gmail.com">sergio@gmail.com</a> <br>
+            <a href="tel:+554733223344">(47) 33223344</a>
         </article>
     </section>
 
@@ -120,8 +153,14 @@
                 <h6>
                     Navegação Secundária
                 </h6>
-                Links Complementares <br>
-                Empresa ABC
+                <ul>
+                    <li>
+                        Links Complementares <br>
+                    </li> 
+                    <li>
+                        Empresa ABC
+                    </li>
+                </ul>
             </nav>
         </aside>
 
@@ -132,10 +171,11 @@
 
    <footer>
         <nav>
-            LinkedIn <br>
-            ProWay <br>
-            School <br>
-            College <br>
+            <a href="https://www.linkedin.com/in/s%C3%A9rgio-medeiros-90ba5a22b/">LinkedIn <br></a>
+            <!--The two slashes refer to the root repository-->
+            <a href="//proway.com.br">Proway <br></a>
+            <a href="https://www.linkedin.com/in/s%C3%A9rgio-medeiros-90ba5a22b/">School <br></a>
+            <a href="https://www.linkedin.com/in/s%C3%A9rgio-medeiros-90ba5a22b/">College <br></a>
         </nav>
         Criado no curso de HTML da capgemini <br>
         &copy; 2022 - Sérgio Medeiros dos Santos Filho
@@ -143,3 +183,13 @@
 
 </body>
 </html>
+
+<!--
+    Nothing - relative to the current location
+    ex pagina/contato.html
+    ../ one level up
+    / current root
+    full path (protocolo + url)
+    https://...
+    //url
+-->
