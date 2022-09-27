@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Logico E</title>
+
+    <!--JS-->
+    <script>
+        
+        var media = 6;
+        var faltas = 4;
+
+        if((media >= 7) && (faltas <=3)) {
+            alert("Aluno Aprovado");
+        } else if ((media >= 7) && (faltas >= 4 && faltas <= 7)) {
+            alert("Recuperação por faltas")
+        } else if((media < 7 && media > 3) && (faltas <= 3)) {
+            alert("Aluno em recuperação");
+        } else {
+            alert("Aluno Reprovado")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
