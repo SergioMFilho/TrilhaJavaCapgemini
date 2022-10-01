@@ -39,8 +39,10 @@
 }
 
 .main-header__menu a:hover {
-    background-color: var(--blue);
+    background-color: #005486;
     color: #fff;
+    border-radius: 5px;
+    transition: 1s;
 }
 
 .container-menu {
@@ -84,16 +86,3 @@
     height: 100px;
 }
 
- .search-form input{
-    box-sizing: border-box;
-    width: 100px;
-}
- 
- .search-form button{
-    width: 56px;
-    height: 56px;
-    background-color: var(--blue);
-    border:none;
-    color: #fff;
-    font-size: 22px;
-} 
