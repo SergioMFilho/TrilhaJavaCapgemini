@@ -14,6 +14,7 @@ import { ProdutosComponent } from '../produtos.component';
 export class DetalhesProdutoComponent implements OnInit {
   produto: IProduto | undefined;
   quantidade = 1;
+produtos: any;
 
   constructor(
     private produtosService: ProdutosService,
@@ -26,6 +27,7 @@ export class DetalhesProdutoComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const produtoId = Number(routeParams.get("id"));
     this.produto = this.produtosService.getOne(produtoId);
+    console.log(this.produto);
   }
 
   adicionarAoCarrinho() {

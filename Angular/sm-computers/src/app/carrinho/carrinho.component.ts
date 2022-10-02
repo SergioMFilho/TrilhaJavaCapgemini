@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CarrinhoService } from '../carrinho.service';
+import { IProduto, IProdutoCarrinho } from '../produtos';
 
 @Component({
   selector: 'app-carrinho',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent implements OnInit {
+  itensCarrinho: IProdutoCarrinho[] = [];
 
-  constructor() { }
-
+  constructor(
+    public carrinhoService: CarrinhoService
+  ) { }
+    
   ngOnInit(): void {
+    this.itensCarrinho = this.carrinhoService.obtemCarrinho();
+  }
+
+  removerProdutoCarrinho(produtoId : number) {
+    this.itensCarrinho = this.itensCarrinho.filter(item => item.id !== produtoId);
+    this.carrinhoService.removerProdutoCarrinho(produtoId);
   }
 
 }
