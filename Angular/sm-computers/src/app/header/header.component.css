@@ -58,30 +58,4 @@
     border-radius: 4px;
 }
 
-#divForm {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#inputForm {
-    height: 2rem;
-    width: 27rem;
-    background-color: #dedcdc;
-    border: none;
-}
-
-#buttonForm {
-    height: 2.5em;
-    width: 3rem;
-    background-color: #005486;
-}
-
-#iconSearch {
-    color: #fff;
-}
-
-.divform2 {
-    width: 200px;
-    height: 100px;
-}
 

@@ -13,17 +13,12 @@
                         <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
                     </a>
                 </li>
-                <li> <a href=""> Contato</a> </li>
+                <li> <a routerLink="contato"> Contato</a> </li>
                 <li> <a href=""> <i class="fa-brands fa-linkedin-in"> </i> </a>
                 <li> <a href=""> <i class="fa-brands fa-github"></i> </a>
                 <li> <a href=""> <i class="fa-brands fa-instagram"> </i></a></li>    
             </ul>
         </nav>
-        <div id="divForm">
-            <div class="divForm2">
-                <input type="text" id="inputForm">
-                <button id="buttonForm"> <i class="fa-solid fa-magnifying-glass" id="iconSearch"></i> </button>
-            </div>
-        </div>
+        <app-barra-pesquisa></app-barra-pesquisa>
     </div>
 </header>
