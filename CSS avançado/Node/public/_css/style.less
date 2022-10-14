@@ -1,30 +1,86 @@
-@cor : blue;
-@cor_cinza_claro : rgb(210,212,208);
-@tamanho: 20px;
+@cor1 : blue;
+@cor2 : red;
+@cor3 : green;
+@tamanho : 20px;
+@width : 0.75;
 
-body {
-    background-color: @cor_cinza_claro;
+.drop-shadow() {
+    text-shadow: 2px 1px 1px #ccc;
+    text-decoration: underline;
 }
 
-h1 {
-    .cores('h1');
+body {
+    background-color: rgb(210,212,208);
+    width: percentage(@width);
+    margin-left: 10%;
 }
 
 p {
-    .cores('p');
-}
-
-.cores(@tag) {
-    color: @cor;
-    & when (@tag = 'p') {
-        font-size: @tamanho*1.23;
-        background-color: lightgreen;
-
-    } 
-    & when (@tag = 'h1') {
-        font-size: @tamanho*2;
+    .drop-shadow();
+    b {
+        color: @cor2;
     }
 }
+
+.drop-shadow(@color : darkgreen, @backgroundColor : rgb(139,74,125)) {
+    & when (@color = '') {
+        color: red;
+    } else {
+        color: @color;
+    }
+    text-shadow: 2px 1px 1px #ccc;
+    text-decoration: underline;
+    background-color: @backgroundColor;
+}
+
+h1 {
+    .drop-shadow();
+    color: @cor3;
+}
+
+#div-1 {
+    font-size: @tamanho;
+    color: @cor3;
+}
+
+#div-2 {
+    font-size: @tamanho+5;
+    color: @cor3 + 12;  
+}
+
+#div-3 {
+    font-size: @tamanho+10;
+    color: @cor3 * 1.8;
+}
+
+a.buttom:link, a.button:visited, a{
+    background-color: red;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    width: 15%;
+}
+// h1 {
+//     .cores('h1');
+// }
+
+// p {
+//     .cores('p');
+// }
+
+// .cores(@tag) {
+//     color: @cor;
+//     & when (@tag = 'p') {
+//         font-size: @tamanho*1.23;
+//         background-color: lightgreen;
+
+//     } 
+//     & when (@tag = 'h1') {
+//         font-size: @tamanho*2;
+//     }
+// }
 
 
 // @cor1 : blue;
